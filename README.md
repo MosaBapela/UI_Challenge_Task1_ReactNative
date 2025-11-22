@@ -1,50 +1,83 @@
-# Welcome to your Expo app 👋
+# UI Challenge Task 1 React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is a React Native application built using Expo. This guide will help you run the project locally for development and also how to install the built APK on an Android device.
 
-## Get started
+## Getting Started
 
-1. Install dependencies
+### Prerequisites
+- Node.js and npm installed
+- Expo CLI installed globally (`npm install -g expo-cli`)
+- EAS CLI installed globally (`npm install -g eas-cli`)
+- An Android or iOS device/emulator for testing
 
+### Running the Project Locally
+
+1. Clone the repository and navigate into the project directory:
+   ```bash
+   git clone <repository-url>
+   cd UI_Challenge_Task1_ReactNative
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. Start the Expo development server:
    ```bash
-   npx expo start
+   npm start
+   # or
+   expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Run on your preferred platform:
+   - For Android device/emulator:
+     ```bash
+     npm run android
+     # or
+     expo start --android
+     ```
+   
+   - For iOS device/simulator (macOS only):
+     ```bash
+     npm run ios
+     # or
+     expo start --ios
+     ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   - For Web:
+     ```bash
+     npm run web
+     # or
+     expo start --web
+     ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+You can also scan the QR code shown in the terminal with the Expo Go app on your phone to run the app.
 
-## Get a fresh project
+### Installing the Built APK on Android
 
-When you're ready, run:
+You can download the latest built APK for this project from the following link:
 
-```bash
-npm run reset-project
-```
+[Download APK](https://expo.dev/accounts/mossman2/projects/UI_Challenge_Task1_ReactNative/builds/18892440-f71c-4541-a1d3-df040776e0ef)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Instructions:
+1. Download the APK file to your Android device.
+2. If prompted, enable installation from unknown sources in your device settings.
+3. Open the downloaded APK file to install the app.
+4. Once installed, you can launch the app like any other Android application.
 
-## Learn more
+## Additional Notes
 
-To learn more about developing your project with Expo, look at the following resources:
+- The project uses EAS Build with a custom profile configured to produce APK files that can be installed directly.
+- For more details on EAS Build, visit: https://docs.expo.dev/build/introduction/
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Troubleshooting
 
-## Join the community
+If you encounter any issues running or building the app, consider the following:
+- Confirm you have the correct versions of Node.js, Expo CLI, and EAS CLI installed.
+- Check your internet connection for uploading builds.
+- Make sure your device/emulator has proper settings to run the app.
 
-Join our community of developers creating universal apps.
+## Contact
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+For further support, contact the project maintainer.
